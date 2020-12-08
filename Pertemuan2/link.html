@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HTML Link</title>
+        <style>
+            body{
+                font-size: 16px;
+                line-height: 28px;
+                background-color: rgb(3, 227, 227);
+            }
+            .container{
+                width: 800px;
+                margin: auto;
+                background-color: rgb(150, 240, 0);
+                padding: 20px;
+            }
+            .header{
+                padding: 20px;
+                background-color: rgb(190, 190, 190);
+                text-align: center;
+            }
+            .container2{
+                background-color: white;
+                margin-top: 20px;
+                padding: 5px;
+            }
+            .text{
+               margin-left: 80px;
+               margin-top: 45px;
+               margin-bottom: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <h1 class="judul">PENERAPAN HTML LINK</h1>
+            </div>
+            
+            <div class="container2">
+                <h1>Jenis-jenis Link</h1>
+                <h2>Internal Link</h2>
+                <p> Contoh : <a href="about.html">About Us</a>
+                </p>
+                <h2>Eksternal Link</h2>
+                <p> Contoh : <a href="https://www.facebook.com/">Facebook</a>
+                </p>
+            </div>
+            <div>
+                <h2>Title</h2>
+                <p>Contoh : 
+                <a href="https://www.youtube.com/" title="Menuju ke halaman Youtube">Youtube</a>
+                </p>
+            </div>
+                
+                <div id="container2">
+                    <h2>Style</h2>
+                    <p>Contoh :</p>
+                    <ul>
+                        <a href="#container2" style="color:red">RED</a> | 
+                        <a href="#container2" style="color:green">GREEN</a> | 
+                        <a href="#container2" style="color:deeppink">PINK</a> | 
+                        <a href="#container2" style="color:white;background-color: orange;">WHITE+ORANGE</a> | 
+                        <a href="#container2" style="text-decoration: none;">NONE</a>
+                    </ul>
+                </div>
+            </div>
+
+            
+                <h1>Atribut Pada Link</h1>
+            </div>
+            <div><h2>Target</h2>
+            <p>Contoh : 
+                <a href="https://facebook.com/" target="frame1">Facebook</a>
+            </p>
+            <p>
+                <iframe name="frame1" width="700" height="400"></iframe>
+            </p>
+            </div>
+            <div class="container2">
+                <h2>Link Anchor</h2>
+                <p id="first">
+                    Go to <a href="#last">last paragraph.</a>
+                </p>
+                <h2><center>Valorant Patch Episode 1</center></h2>
+                <p align="justify">
+                    1. ANTREAN PANGKAT LEBIH KETAT     
+                </p>
+                <p align="justify">
+                    Demi pengalaman pemasangan yang lebih seimbang, kami membatasi perbedaan tingkat Pangkat yang bisa antre bersamaan dari 6 tingkat menjadi 3 tingkat. Pengalaman bersama teman-teman di luar Pangkatmu masih penting bagi kami dan kami berusaha menghasilkan ruang lebih untuk hal ini.    
+                </p>
+                <p align="justify"> 
+                    2. SERVER PREFERENSI
+                </p>
+                <p align="justify"> 
+                    Kini kamu bisa memilih server yang kamu inginkan. Mengingat kondisi pemasangan, kami tak bisa menjamin bahwa kamu akan selalu mendapatkan server yang kamu inginkan. Namun fitur ini akan sangat meningkatkan peluangmu mendapatkan server game yang kamu inginkan dan menstabilkan atau membantu memperbaiki kondisi ping kamu.
+                </p>
+                <p align="justify">
+                    3. PANGKAT IMMORTAL-PLUS 100% BERDASARKAN MENANG-KALAH
+                </p>
+                <p align="justify">
+                    Bagi kalian yang hampir mencapai puncak atau berada di puncak pangkat Immortal-plus, naik atau turunnya pangkatmu akan ditentukan sepenuhnya oleh kemenangan dan kekalahan yang dialami serta seberapa telak perbedaan skor finalnya.
+                </p>
+                <p align="justify">
+                    4. LENCANA PANGKAT BABAK
+                </p>
+                <p align="justify">
+                    Terakhir, Babak III adalah peluang baru untuk menghasilkan kemenangan di pangkat lebih tinggi dan memoles Lencana Pangkat Babak menjadi hal yang bisa kamu banggakan.
+                </p>
+                <p align="justify">
+                    EPISODE 2 DAN SELANJUTNYA
+                </p>
+                <p align="justify">
+                    Berdasarkan hasil eksperimen mode pangkat Immortal-plus kami, kami memutuskan akan menerapkan perhitungan menang-kalah murni di semua pangkat.
+                    Selain itu, papan peringkat berbasis wilayah publik akan segera hadir! Kami sedang mengerjakan lebih banyak proyek, tetapi kamu harus bersabar menunggu sampai menjelang Episode 2.
+                </p>
+
+                <p id="last">
+                    Go to <a href="#first">first paragraph.</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h2>Link Bergambar</h2>
+                <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&hl=in" title="AMONG US">
+                    <img src="https://akcdn.detik.net.id/community/media/visual/2020/09/19/among-us_169.jpeg?w=700&q=90" style="float:center;" height="500" width="910"/></a>
+                    <div class="text">
+                        <h2><center>GAME TERPOPULER SAAT INI</center></h2>
+                    </div>
+            </div>
+
+            <div class="container2">
+                <h2>Link Untuk Mengirim Email</h2>
+                <p>
+                    Contact me on : 
+                    <a href="adryanggwp@gmail.com" title="Send mail to : adryanggwp@gmail.com">adryanggwp@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h2>Link Dengan Button</h2>
+                <p>Click the button below to go to HTML Link site.</p>
+                <button onclick="document.location='link.html'">HTML Link</button>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <script language="javascript">
+            var newdigit = true;
+            var op;   
+            var temp;
+            function Angka(angka){
+                if(newdigit){     
+                    newdigit = false;     
+                }else{
+                    angka = document.kalkulator.layar.value + angka;
+                }
+                document.kalkulator.layar.value=angka;
+            }
+   
+            function Operator(opt){    
+                if(temp){
+                    Hitung();
+                }
+                temp = document.kalkulator.layar.value;
+
+                op = opt;
+                newdigit=true;
+            }
+   
+            function Hitung(){
+                var angka = document.kalkulator.layar.value;
+                if(op == '*'){
+                    temp = temp * angka;
+                }else if(op == '/'){
+                    temp = temp / angka;
+                }else if(op == '+'){
+                    temp = parseInt(temp) + parseInt(angka);
+                }else if(op == '-'){
+                    temp = temp - angka;
+                }else if(op== '^'){
+                    temp = Math.pow(temp,angka);
+                }else if(op== '%'){
+                    temp = temp / 100;
+                }
+                document.kalkulator.layar.value = temp;
+                temp = 0;
+            }
+   
+            function Clear(){
+                newdigit=true;
+                document.kalkulator.layar.value='0';
+                temp=0;
+            }
+        </script>
+        <style type="text/css">
+            .button{
+                width:70px;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="kalkulator">
+            KALKULATOR<br>
+                <input type="text" value="0" name="layar" size="35"/><br/>
+                <input type="button" value="1" class="button" onclick="Angka(1);"/>
+                <input type="button" value="2" class="button" onclick="Angka(2);"/>
+                <input type="button" value="3" class="button" onclick="Angka(3);"/>
+                <input type="button" value="+" class="button" onclick="Operator('+');"/>
+                <input type="button" value="^" class="button" onclick="Operator('^');"/><br/>
+                <input type="button" value="4" class="button" onclick="Angka(4);"/>
+                <input type="button" value="5" class="button" onclick="Angka(5);"/>
+                <input type="button" value="6" class="button" onclick="Angka(6);"/>
+                <input type="button" value="-" class="button" onclick="Operator('-');"/>
+                <input type="button" value="%" class="button" onclick="Operator('%');"/><br/>
+                <input type="button" value="7" class="button" onclick="Angka(7);"/>
+                <input type="button" value="8" class="button" onclick="Angka(8);"/>
+                <input type="button" value="9" class="button" onclick="Angka(9);"/>
+                <input type="button" value="/" class="button" onclick="Operator('/');"/><br/>
+                <input type="button" value="0" class="button" onclick="Angka(0)"/>
+                <input type="button" value="=" class="button" onclick="Hitung();"/>
+                <input type="button" value="Clear" class="button" onclick="Clear();"/>
+                <input type="button" value="*" class="button" onclick="Operator('*');"/>
+        </form>
+    </body>
+</html>

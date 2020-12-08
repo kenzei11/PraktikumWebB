@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tabel Absensi</title>
+        <style>
+            body{
+                font-size: 16px;
+                line-height: 28px;
+                background-color: rgb(227, 227, 227);
+            }
+            .container{
+                width: 800px;
+                margin: auto;
+                background-color: rgb(240, 240, 240);
+                padding: 20px;
+            }
+            .container2{
+                background-color: white;
+                padding: 5px;
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="container">
+            <div class="container2">
+                <h1>Biodata Diri</h1>
+                <p>
+                    Oleh : I Gusti Gede Ngurah Adryan Pratama Putra Bueka<br>NIM   : 1808561045
+                </p>
+            </div>
+            	
+            <form>
+            	<fieldset>
+            		<legend>Isi Biodata Diri</legend>
+            			<!-- Nama Type Input--> 
+            			<label for="fname">Nama Depan : </label><br>
+            			<input type="text" id="fname" name="fname"><br>
+            			<label for="lname">Nama Belakang : </label><br>
+            			<input type="text" id="lname" name="lname"><br>
+            			<label for="tlahir">Tempat Lahir : </label><br>
+            			<input type="text" id="tlahir" name="tlahir"><br>
+
+            			<!-- Tanggal Lahir Type Date--> 
+            			<label>Tanggal Lahir : </label><br>
+            			<input type="date" name="tanggal"><br>
+
+            			<!-- Jenis Kelamin Type Radio--> 
+            			<label>Jenis Kelamin : </label><br>
+            			<input type="radio" id="Pria" name="gender" value="Pria">
+            			<label for="Pria">Pria</label><br>
+            			<input type="radio" id="Wanita" name="gender" value="Wanita">
+            			<label for="Wanita">Cewek</label><br>
+
+            			<!-- Pendidikan Type Select--> 
+            			<label for="pakhir">Pendidikan Terakhir : </label><br>
+            			<select id="pakhir" name="pakhir">
+            				<option value="SD">SD</option>
+            				<option value="SMP">SMP</option>
+            				<option value="SMA">SMA</option>
+            				<option value="S1">S1</option>
+            				<option value="S2">S2</option>
+            			</select><br>
+            			<label for="psekarang">Pendidikan Saat Ini : </label><br>
+            			<select id="psekarang" name="psekarang">
+            				<option value="SD">SD</option>
+            				<option value="SMP">SMP</option>
+            				<option value="SMA">SMA</option>
+            				<option value="S1">S1</option>
+            				<option value="S2">S2</option>
+            			</select><br>
+
+            			<!-- No. Telp Type Number--> 
+            			<label>Nomor Telepon : </label><br>
+            			<input type="number" name="notelp"><br>
+            			
+            			<!-- Alamat Type Textarea--> 
+            			<label>Alamat : </label><br>
+            			<textarea name="Alamat">Alamat</textarea><br>
+            	</fieldset>
+            </form>
+        </div>
+    </body>
+</html>
